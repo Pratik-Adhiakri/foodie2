@@ -1,4 +1,4 @@
-    <h1>Panipuri Website</h1>
+ <h1>Panipuri Website</h1>
     <h2>Description:</h2>
     <p>This is a simple website about Panipuri,one of the most popular and one of the most eaten food in India and Nepal. It is well known for its spicy masala and flavoful water.</p>
     <h2>How to get the Code?</h2>
