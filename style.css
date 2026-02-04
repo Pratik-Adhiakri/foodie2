@@ -4,6 +4,7 @@
   --bg:#fcf8f1;
   --text:#2c3e50;
   --white:#ffffff;
+  --dark:#2c3e50;
 }
 * {
   margin: 0;
@@ -25,7 +26,7 @@ body {
 
 .intro {
   padding: 100px 0;
- background: linear-gradient(rgba(0,0,0,0.5)),url(panipuri3.webp);
+ background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url(panipuri3.webp);
  background-size: cover;
  background-position: center;
  color: var(--white);
@@ -98,9 +99,9 @@ body {
   cursor: pointer;
 }
 .howtoeat, .types{
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .howtoeat h2,.types h2{
   text-align: center;
@@ -149,8 +150,12 @@ body {
   margin-top: 50px;
   text-align: center;
 }
-
 .gallery{
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1000px;
+}
+.gallery .container{
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
    gap: 20px;
@@ -164,7 +169,12 @@ body {
     transition: transform 0.3s ease;
 }
 .gallery h2{
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: var(--dark); 
     font-size: 2.5em;
 }
+
+.gallery img:hover{
+  transform: translateY(-10px);
+}
+   
